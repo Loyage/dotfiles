@@ -1,6 +1,8 @@
 source ~/.dotfiles/zsh/omz.zsh
 source ~/.dotfiles/zsh/alias.zsh
-source ~/.dotfiles/zsh/server.zsh
+if [ -e ./zsh/server.zsh ]; then
+  source ~/.dotfiles/zsh/server.zsh
+else
 
 # ---- kitty 设置窗口标题 ----
 precmd() {
