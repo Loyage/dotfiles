@@ -1,0 +1,13 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.gitconfig:
+    ~/.zshrc_custom:
+    ~/.config/yazi/: ./yazi
+    ~/.config/kitty/: ./kitty
+    ~/.config/nvim/: ./nvim

@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = 792058350@qq.com
+	name = Loyage
+[pull]
+	rebase = true
