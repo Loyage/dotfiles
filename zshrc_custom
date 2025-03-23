@@ -2,7 +2,7 @@ source ~/.dotfiles/zsh/omz.zsh
 source ~/.dotfiles/zsh/alias.zsh
 if [ -e ./zsh/server.zsh ]; then
   source ~/.dotfiles/zsh/server.zsh
-else
+fi
 
 # ---- kitty 设置窗口标题 ----
 precmd() {
@@ -12,4 +12,3 @@ precmd() {
         echo -ne "\033]0;${PWD##*/}\007"
     fi
 }
-

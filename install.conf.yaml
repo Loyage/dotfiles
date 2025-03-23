@@ -11,3 +11,4 @@
     ~/.config/yazi/: ./yazi
     ~/.config/kitty/: ./kitty
     ~/.config/nvim/: ./nvim
+    ~/.config/hypr/conf/custom.conf: ./hypr/conf/custom.conf
