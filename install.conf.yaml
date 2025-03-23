@@ -11,4 +11,6 @@
     ~/.config/yazi/: ./yazi
     ~/.config/kitty/: ./kitty
     ~/.config/nvim/: ./nvim
+    ~/.config/fontconfig/fonts.conf: ./fontconfig/fonts.conf
     ~/.config/hypr/conf/custom.conf: ./hypr/conf/custom.conf
+    ~/.config/waybar/modules.json: ./waybar/modules.json

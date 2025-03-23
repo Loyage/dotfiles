@@ -33,3 +33,9 @@ You should install them by your environment, but without installing them won't a
 - lazygit
 - fzf
 - tmux
+- MapleMonoNerdFontNFCN
+
+## In some situation
+
+- hyprland
+- waybar
