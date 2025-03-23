@@ -8,9 +8,11 @@
 - link:
     ~/.gitconfig:
     ~/.zshrc_custom:
+    ~/.config/zsh: ./zsh
     ~/.config/yazi/: ./yazi
     ~/.config/kitty/: ./kitty
     ~/.config/nvim/: ./nvim
+    ~/.config/ohmyposh: ./ohmyposh
     # in linux
     ~/.config/fontconfig/: ./fontconfig
     ~/.config/hypr/conf/custom.conf: ./hypr/conf/custom.conf

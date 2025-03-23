@@ -1,21 +1,16 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+# -----------------------------------------------------
+# OH MY ZSH
+# -----------------------------------------------------
 
-# Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time Oh My Zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# -----------------------------------------------------
+# Theme
+# -----------------------------------------------------
 ZSH_THEME="robbyrussell"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
+# -----------------------------------------------------
+# omz 默认配置项
+# -----------------------------------------------------
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -70,6 +65,17 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
+# -----------------------------------------------------
+# Prompt
+#   不知为何，这个放 source $ZSH/oh-my-zsh.sh 后面就会有问题，因此置于此处
+# -----------------------------------------------------
+# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/EDM115-newline.omp.json)"
+
+# -----------------------------------------------------
+# plugins
+# -----------------------------------------------------
 plugins=(
   git
   sudo
@@ -84,49 +90,25 @@ plugins=(
   copybuffer
   dirhistory
 )
-
 source $ZSH/oh-my-zsh.sh
+
+# -----------------------------------------------------
+# Set-up zsh-autosuggestions
+# -----------------------------------------------------
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+# zsh history
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
 
-# User configuration
-
-# -----------------------------------------------------
-# Prompt
-# -----------------------------------------------------
-# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
-# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/EDM115-newline.omp.json)"
 # -----------------------------------------------------
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 # -----------------------------------------------------
 source <(fzf --zsh)
 
-# zsh history HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-setopt appendhistory
-
-
-# You may need to manually set your language environment
+# -----------------------------------------------------
+# Set-up LANG
+# -----------------------------------------------------
 export LANG=zh_CN.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch $(uname -m)"
-
-# Set personal aliases, overriding those provided by Oh My Zsh libs,
-# plugins, and themes. Aliases can be placed here, though Oh My Zsh
-# users are encouraged to define aliases within a top-level file in
-# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
-# - $ZSH_CUSTOM/aliases.zsh
-# - $ZSH_CUSTOM/macos.zsh
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
