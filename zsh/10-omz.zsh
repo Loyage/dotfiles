@@ -18,10 +18,9 @@ ZSH_THEME="robbyrussell"
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
-# Uncomment one of the following lines to change the auto-update behavior
-# zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+# Auto update settings
+zstyle ':omz:update' mode reminder
+zstyle ':omz:update' frequency
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
@@ -83,6 +82,8 @@ plugins=(
   git
   # alias: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
   archlinux
+  # alias: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/brew
+  brew
   # <Esc> twice to add 'sudo' before the last command
   sudo
   # load autojump, which can 'j' to frequently used folders
@@ -97,7 +98,8 @@ plugins=(
   # <Alt> + ↑↓←→
   dirhistory
 )
-source $ZSH/oh-my-zsh.sh
+# Don't load Oh My Zsh on Linux TTYs
+[[ -z "$OMZ_LOAD" && $TTY = /dev/tty* && $OSTYPE = linux* ]] || source "$ZSH/oh-my-zsh.sh"
 
 # -----------------------------------------------------
 # Set-up zsh-vi-mode 设置不同模式不同光标
