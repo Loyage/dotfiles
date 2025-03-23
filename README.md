@@ -32,13 +32,15 @@ You should install them by your environment, but without installing them won't a
 - [Kitty](https://sw.kovidgoyal.net/kitty/) : The fast, feature-rich, GPU based terminal emulator.
 - [Neovim](https://neovim.io/) : hyperextensible Vim-based text editor.
 - [Yazi](https://yazi-rs.github.io/) : Blazing fast terminal file manager written in Rust, based on async I/O.
+- lazygit : A simple terminal UI for git commands
 
 - eza
 - bat
 - zoxide
-- lazygit
 - fzf
 - tmux
+- fastfetch
+- fast-syntax-highlighting
 - MapleMonoNerdFontNFCN
 
 ## In some situation

@@ -50,10 +50,12 @@ function yi() {
   rm -f -- "$tmp"
 }
 
-# fzf 加强版 cd nvim git_branch
-alias fcd='cd "$(find . -type d | fzf --border --height 60% --preview="ls -la {}")"'
-alias fnv='nvim "$(find . -type f | fzf --border --height 60% --preview="cat {}")"'
-alias gcb='git branch | fzf --border --height 60% | cut -c 3- | xargs git checkout'
+# 利用 bat 加强 fzf
+export FZF_DEFAULT_OPTS="--height 60% --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+# 再利用加强后的 fzf 加强 cd nvim git_branch
+alias fnv='nvim "$(find . -type f | fzf --border)"'
+alias fcd='cd   "$(find . -type d | fzf --border --preview="eza -la {}")"'
+# alias gcb='git branch | fzf --border --height 60% | cut -c 3- | xargs git checkout'
 
 # nvidia-smi
 alias smi='watch -n 2 -d nvidia-smi'
@@ -109,7 +111,7 @@ alias ff='fastfetch'
 
 
 # -----------------------------------------------------
-# For Linux
+# For Arch Linux
 # -----------------------------------------------------
 if [ "$(uname -s)" = "Linux" ]; then
   # Arch Linux
