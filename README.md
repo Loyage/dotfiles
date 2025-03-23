@@ -17,6 +17,12 @@ sudo ./install
 
 🖥️ Zsh configuration is set to `~/.zshrc_custom` , to activate it, please add `source ~/.zshrc_custom` at the end of `~/.zshrc` .
 
+```bash
+if [ -f ~/.zshrc_custom ]; then
+    source ~/.zshrc_custom
+fi
+```
+
 ## Software recommended
 
 This dotfiles is not aimed to help you installing softwares, it's just dotfiles.

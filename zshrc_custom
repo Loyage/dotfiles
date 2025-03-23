@@ -1,5 +1,7 @@
 source ~/.dotfiles/zsh/omz.zsh
 source ~/.dotfiles/zsh/alias.zsh
+
+# 用户自己的 ssh server alias，作为隐私不上传
 if [ -e ./zsh/server.zsh ]; then
   source ~/.dotfiles/zsh/server.zsh
 fi

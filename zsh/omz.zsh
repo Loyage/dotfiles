@@ -76,7 +76,13 @@ plugins=(
   autojump
   zsh-autosuggestions
   zsh-syntax-highlighting
+  fast-syntax-highlighting
   zsh-vi-mode
+  web-search
+  archlinux
+  copyfile
+  copybuffer
+  dirhistory
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -84,7 +90,21 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
+# -----------------------------------------------------
+# Prompt
+# -----------------------------------------------------
+# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/EDM115-newline.omp.json)"
+# -----------------------------------------------------
+# Set-up FZF key bindings (CTRL R for fuzzy history finder)
+# -----------------------------------------------------
+source <(fzf --zsh)
+
+# zsh history HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
 
 # You may need to manually set your language environment
 export LANG=zh_CN.UTF-8
