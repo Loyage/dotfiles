@@ -60,12 +60,6 @@ ZSH_THEME="robbyrussell"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-
 # -----------------------------------------------------
 # Prompt
 #   不知为何，这个放 source $ZSH/oh-my-zsh.sh 后面就会有问题，因此置于此处
@@ -76,18 +70,31 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/EDM115-newline.omp.j
 # -----------------------------------------------------
 # plugins
 # -----------------------------------------------------
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+
+# 插件列表和具体说明可见：
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
 plugins=(
+  # alias: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
   git
+  # alias: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
+  archlinux
+  # <Esc> twice to add 'sudo' before the last command
   sudo
+  # load autojump, which can 'j' to frequently used folders
   autojump
   zsh-autosuggestions
   zsh-syntax-highlighting
   fast-syntax-highlighting
+  # zsh's vim mode
   zsh-vi-mode
+  # web_search google xxx
   web-search
-  archlinux
-  copyfile
-  copybuffer
+  # <Alt> + ↑↓←→
   dirhistory
 )
 source $ZSH/oh-my-zsh.sh
