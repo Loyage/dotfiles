@@ -62,7 +62,7 @@ alias smi='watch -n 2 -d nvidia-smi'
 # -----------------------------------------------------
 # Because of laziness
 # -----------------------------------------------------
-alias zshrc="nvim ~/.dotfiles/zshrc/"
+alias zshrc="nvim ~/.config/zsh/"
 alias echo_path='echo $PATH | tr ":" "\n"'
 alias c='clear'
 

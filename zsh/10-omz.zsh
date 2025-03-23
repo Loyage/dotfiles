@@ -100,6 +100,11 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # -----------------------------------------------------
+# Set-up zsh-vi-mode 设置不同模式不同光标
+# -----------------------------------------------------
+export VI_MODE_SET_CURSOR=true
+
+# -----------------------------------------------------
 # Set-up zsh-autosuggestions
 # -----------------------------------------------------
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
