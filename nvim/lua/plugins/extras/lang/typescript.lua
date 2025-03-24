@@ -201,6 +201,7 @@ return {
     optional = true,
     dependencies = {
       {
+        -- 非侵入式的 mason 配置，值得学习
         "williamboman/mason.nvim",
         opts = function(_, opts)
           opts.ensure_installed = opts.ensure_installed or {}
