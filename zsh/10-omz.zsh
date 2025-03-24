@@ -3,10 +3,17 @@
 # -----------------------------------------------------
 
 # -----------------------------------------------------
-# Theme
+# Theme: Prompt 使用跨 shell 通用的 oh-my-posh 替代
 # -----------------------------------------------------
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# -----------------------------------------------------
+# Prompt
+#   不知为何，这个放 source $ZSH/oh-my-zsh.sh 后面就会有问题
+# -----------------------------------------------------
+# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/EDM115-newline.omp.json)"
 
 # -----------------------------------------------------
 # omz 默认配置项
@@ -58,13 +65,6 @@ zstyle ':omz:update' frequency
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-
-# -----------------------------------------------------
-# Prompt
-#   不知为何，这个放 source $ZSH/oh-my-zsh.sh 后面就会有问题，因此置于此处
-# -----------------------------------------------------
-# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/EDM115-newline.omp.json)"
 
 # -----------------------------------------------------
 # plugins
