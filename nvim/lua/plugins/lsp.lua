@@ -1,3 +1,4 @@
+---@diagnostic disable: missing-fields
 return {
   -- Customize LSP
   {
@@ -14,8 +15,8 @@ return {
 
       --[[Modify LSP keymaps]]
       local keys = require("lazyvim.plugins.lsp.keymaps").get()
-      -- keys[#keys + 1] = { "gD", false }
-      -- keys[#keys + 1] = { "<leader>cl", false }
+      keys[#keys + 1] = { "gD", false }
+      keys[#keys + 1] = { "<leader>cl", false }
       keys[#keys + 1] = { "<leader>cli", "<cmd>LspInfo<cr>", desc = "LspInfo" }
       keys[#keys + 1] =
         { "<leader>clr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", desc = "Remove workspace" }

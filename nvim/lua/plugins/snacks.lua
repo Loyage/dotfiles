@@ -1,3 +1,7 @@
+--- snacks: 一个集合了多种小插件的插件，定义项参考：
+--- https://github.com/folke/snacks.nvim/blob/main/docs/dashboard.md
+--- > tips: "gx" to quicklt open link
+--- 因为可定义项目过多，因此将其拆分到单独的文件中
 return {
   {
     "folke/snacks.nvim",
@@ -6,34 +10,6 @@ return {
     ---@type snacks.Config
     opts = {
       bigfile = { enabled = true },
-      dashboard = {
-        enabled = true,
-        preset = {
-          header = [[
-
-██╗      ██████╗ ███████╗██╗   ██╗ █████╗  ██████╗ ███████╗
-██║     ██╔═══██╗╚══███╔╝╚██╗ ██╔╝██╔══██╗██╔════╝ ██╔════╝
-██║     ██║   ██║  ███╔╝  ╚████╔╝ ███████║██║  ███╗█████╗  
-██║     ██║   ██║ ███╔╝    ╚██╔╝  ██╔══██║██║   ██║██╔══╝  
-███████╗╚██████╔╝███████╗   ██║   ██║  ██║╚██████╔╝███████╗
-╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
-]],
-        },
-        sections = {
-          { section = "header" },
-          { section = "keys", gap = 1, padding = 1 },
-          { section = "startup" },
-          ---- Avater, but not properly work by now
-          -- {
-          --   section = "terminal",
-          --   cmd = "ascii-image-converter ~/Pictures/touxiang.png -C -c",
-          --   -- random = 10,
-          --   pane = 2,
-          --   indent = 4,
-          --   height = 30,
-          -- },
-        },
-      },
       explorer = { enabled = true },
       indent = { enabled = true },
       input = { enabled = true },
@@ -54,92 +30,6 @@ return {
       },
     },
     keys = {
-      -- Top Pickers & Explorer
-      {
-        "<leader><space>",
-        function()
-          Snacks.picker.smart()
-        end,
-        desc = "Smart Find Files",
-      },
-      {
-        "<leader>,",
-        function()
-          Snacks.picker.buffers()
-        end,
-        desc = "Buffers",
-      },
-      {
-        "<leader>/",
-        function()
-          Snacks.picker.grep()
-        end,
-        desc = "Grep",
-      },
-      {
-        "<leader>:",
-        function()
-          Snacks.picker.command_history()
-        end,
-        desc = "Command History",
-      },
-      {
-        "<leader>n",
-        function()
-          Snacks.picker.notifications()
-        end,
-        desc = "Notification History",
-      },
-      {
-        "<leader>e",
-        function()
-          Snacks.explorer()
-        end,
-        desc = "File Explorer",
-      },
-      -- find
-      {
-        "<leader>fb",
-        function()
-          Snacks.picker.buffers()
-        end,
-        desc = "Buffers",
-      },
-      {
-        "<leader>fc",
-        function()
-          Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
-        end,
-        desc = "Find Config File",
-      },
-      {
-        "<leader>ff",
-        function()
-          Snacks.picker.files()
-        end,
-        desc = "Find Files",
-      },
-      {
-        "<leader>fg",
-        function()
-          Snacks.picker.git_files()
-        end,
-        desc = "Find Git Files",
-      },
-      {
-        "<leader>fp",
-        function()
-          Snacks.picker.projects()
-        end,
-        desc = "Projects",
-      },
-      {
-        "<leader>fr",
-        function()
-          Snacks.picker.recent()
-        end,
-        desc = "Recent",
-      },
       -- git
       {
         "<leader>gb",
@@ -571,4 +461,5 @@ return {
       })
     end,
   },
+  { import = "plugins/extras/snacks" },
 }
