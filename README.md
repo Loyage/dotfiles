@@ -41,6 +41,7 @@ You should install them by your environment, but without installing them won't a
 - tmux
 - fastfetch
 - zoxide
+- tealdeer
 - zsh
   * oh-my-zsh
     + fast-syntax-highlighting

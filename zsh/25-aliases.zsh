@@ -50,6 +50,9 @@ function yi() {
   rm -f -- "$tmp"
 }
 
+# better tldr (tealdeer as implementation)
+alias tldr='tldr --color always'
+
 # 利用 bat 加强 fzf
 export FZF_DEFAULT_OPTS="--height 60% --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 # 再利用加强后的 fzf 加强 cd nvim git_branch
