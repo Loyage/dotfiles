@@ -129,11 +129,17 @@
         },
         {
           "properties": {
+            "display_virtual_env": true,
+            "dispplay_default": true,
+            "display_version": false,
+            "home_enabled": true,
+            "prefix": "\uE235 ",
+            "postfix": " ",
             "display_mode": "files"
           },
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b4",
-          "template": "\ue73c {{ .Full }}",
+          "template": "\ue73c {{ .Full }} {{ if .Venv }}{{ .Venv }}{{ end }}",
           "foreground": "#282a36",
           "background": "#50fa7b",
           "type": "python",
