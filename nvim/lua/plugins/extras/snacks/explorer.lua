@@ -1,14 +1,10 @@
---- picker 和 explorer 两个插件的相关快捷键
+--- snacks explorer 的相关快捷键
 --- 出于个人喜好，<leader>e 和 <leader>E 已由 yazi 接管
 --- 打开 explorer 的快捷键被映射为次级命令：<leader>fe, <leader>fE
 return {
   {
     "folke/snacks.nvim",
     ---@type snacks.Config
-    opts = {
-      explorer = { enabled = true },
-      picker = { enabled = true },
-    },
     keys = {
       {
         "<leader><space>",

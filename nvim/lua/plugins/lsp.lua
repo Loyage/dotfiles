@@ -15,7 +15,7 @@ return {
 
       --[[Modify LSP keymaps]]
       local keys = require("lazyvim.plugins.lsp.keymaps").get()
-      keys[#keys + 1] = { "gD", false }
+      keys[#keys + 1] = { "gD", false } -- used in typescipt.lua
       keys[#keys + 1] = { "<leader>cl", false }
       keys[#keys + 1] = { "<leader>cli", "<cmd>LspInfo<cr>", desc = "LspInfo" }
       keys[#keys + 1] =
@@ -45,34 +45,6 @@ return {
       },
       servers = {
         yamlls = {},
-        -- ts_ls = {
-        --   -- Need to disable this cuz `Inline Edit` won't work otherwise
-        --   single_file_support = false,
-        --   settings = {
-        --     typescript = {
-        --       inlayHints = {
-        --         includeInlayParameterNameHints = "literal",
-        --         includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-        --         includeInlayFunctionParameterTypeHints = true,
-        --         includeInlayVariableTypeHints = false,
-        --         includeInlayPropertyDeclarationTypeHints = true,
-        --         includeInlayFunctionLikeReturnTypeHints = true,
-        --         includeInlayEnumMemberValueHints = true,
-        --       },
-        --     },
-        --     javascript = {
-        --       inlayHints = {
-        --         includeInlayParameterNameHints = "all",
-        --         includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-        --         includeInlayFunctionParameterTypeHints = true,
-        --         includeInlayVariableTypeHints = true,
-        --         includeInlayPropertyDeclarationTypeHints = true,
-        --         includeInlayFunctionLikeReturnTypeHints = true,
-        --         includeInlayEnumMemberValueHints = true,
-        --       },
-        --     },
-        --   },
-        -- },
         lua_ls = {
           settings = {
             Lua = {
