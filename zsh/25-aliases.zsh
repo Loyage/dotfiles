@@ -107,11 +107,13 @@ alias ta='tmux attach-session -t'
 alias tn='tmux new -s'
 alias tk='tmux kill-session -t'
 
-# fetch
+# fastfetch
 alias nf='fastfetch'
 alias pf='fastfetch'
 alias ff='fastfetch'
 
+# github copilot cli
+eval "$(gh copilot alias -- bash)"
 
 # -----------------------------------------------------
 # For Arch Linux
