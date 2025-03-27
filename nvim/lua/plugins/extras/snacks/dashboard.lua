@@ -24,10 +24,13 @@ return {
           { section = "header" },
           { section = "keys", gap = 1, padding = 1 },
           { section = "startup" },
-          ---- Avater, but not properly work by now
+          -- -- Avater:
           -- {
           --   section = "terminal",
-          --   cmd = "ascii-image-converter ~/Pictures/touxiang.png -C -c",
+          --   -- https://github.com/TheZoraiz/ascii-image-converter
+          --   -- cmd = "ascii-image-converter <img_path> -C -c",
+          --   -- https://github.com/hpjansson/chafa
+          --   cmd = "chafa <img_path> --format symbols --symbols vhalf --size 60x17 --stretch; sleep .1",
           --   -- random = 10,
           --   pane = 2,
           --   indent = 4,
