@@ -23,3 +23,12 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.shiftwidth = 4
   end,
 })
+
+-- 设置退出 insert 模式时fcitx自动切换英文输入法
+vim.api.nvim_create_autocmd("InsertLeave", {
+  pattern = "*",
+  callback = function()
+    local fcitx5state = vim.fn.system("fcitx5-remote")[1]
+    vim.fn.system("fcitx5-remote -c")
+  end,
+})
