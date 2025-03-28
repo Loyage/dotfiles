@@ -15,3 +15,11 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.spell = false
   end,
 })
+
+-- 为 markdown、python 设置默认缩进空格数为 4
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown", "python" },
+  callback = function()
+    vim.opt_local.shiftwidth = 4
+  end,
+})
