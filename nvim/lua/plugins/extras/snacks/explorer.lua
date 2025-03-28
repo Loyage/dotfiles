@@ -7,20 +7,6 @@ return {
     ---@type snacks.Config
     keys = {
       {
-        "<leader><space>",
-        function()
-          Snacks.picker.smart()
-        end,
-        desc = "Smart Find Files",
-      },
-      {
-        "<leader>,",
-        function()
-          Snacks.picker.buffers()
-        end,
-        desc = "Buffers",
-      },
-      {
         "<leader>/",
         function()
           Snacks.picker.grep()
