@@ -1,20 +1,43 @@
+-- default settings:
+-- https://www.lazyvim.org/extras/lang/markdown
+-- ~/.local/share/nvim/lazy/LazyVim/lua/lazyvim/plugins/extras/lang/markdown.lua
+--
+-- default plugins:
+-- nvim-lspconfig, mason.nvim, markdown-preview.nvim, render-markdown.nvim
 return {
-  -- TO: 用于在网页中实时渲染
+  {
+    "williamboman/mason.nvim",
+    -- -- 不要默认安装 markdownlint-cli2 和 markdown-toc
+    -- -- 此外还要设置 conform.nvim 不要默认调用这俩，否则会持续报错
+    -- opts = function(_, opts)
+    --   local function removeByValue(array, value)
+    --     for i, v in ipairs(array) do
+    --       if v == value then
+    --         table.remove(array, i)
+    --         return
+    --       end
+    --     end
+    --   end
+    --   opts.ensure_installed = opts.ensure_installed or {}
+    --   removeByValue(opts.ensure_installed, "markdownlint-cli2")
+    --   removeByValue(opts.ensure_installed, "markdown-toc")
+    -- end,
+  },
   -- CMDS: MarkdownPreviewToggle, MarkdownPreview, MarkdownPreviewStop
+  -- KEYS: <leader>cp as MarkdownPreviewToggle
   -- WARNING: yarn needed
   {
     "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     build = "cd app && yarn install",
     init = function()
       vim.g.mkdp_filetypes = { "markdown" }
     end,
-    ft = { "markdown" },
   },
-  -- TO: 用于在nvim中实时预览
+  -- TO: 用于在nvim中实时预览，和 render-markdown.nvim 二选一
   -- CMDS: MarkliveToggle, ..Enable, ..Disable
   {
     "yelog/marklive.nvim",
+    enable = false,
     dependencies = { "nvim-treesitter/nvim-treesitter" },
     lazy = true,
     ft = "markdown",

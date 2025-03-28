@@ -1,5 +1,9 @@
 -- default settings:
 -- https://www.lazyvim.org/extras/lang/typescript
+-- ~/.local/share/nvim/lazy/LazyVim/lua/lazyvim/plugins/extras/lang/typescript.lua
+--
+-- default plugins:
+-- nvim-lspconfig, mason.nvim, mini.icons, (nvim-dap)
 return {
   -- LSP config
   {

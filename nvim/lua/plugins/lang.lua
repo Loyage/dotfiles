@@ -71,6 +71,21 @@ return {
       },
     },
   },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ui = {
+        -- 设置圆角边框
+        border = "rounded",
+        -- 设置安装状态的图标
+        icons = {
+          package_installed = "✅",
+          package_pending = "➕",
+          package_uninstalled = "⭕",
+        },
+      },
+    },
+  },
 
   -- Import extra lsp languages configs
   { import = "plugins.extras.lang" },
