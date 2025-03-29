@@ -32,6 +32,10 @@ require("lazy").setup({
   },
   -- 安装时尝试加载的配色方案
   install = { colorscheme = { "tokyonight", "habamax" } },
+  ui = {
+    border = "rounded",
+    title = "LazyVim",
+  },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update

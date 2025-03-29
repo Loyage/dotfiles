@@ -1,6 +1,6 @@
 -- 为 nvim 设置不同语言的服务（LSP，lint，等等等等）
 -- 各个语言的具体配置放在 ./extras/lang/ 目录下
--- tips: gf 快速打开地址（文件夹用 neo-tree，文件则会直接用 nvim 打开）
+-- tips: gf 快速打开对应地址
 ---@diagnostic disable: missing-fields
 return {
   -- Customize LSP
