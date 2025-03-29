@@ -8,3 +8,4 @@ local map = LazyVim.safe_keymap_set
 map("i", "jj", "<Esc>", { noremap = true, silent = true })
 map("i", "jk", "<Esc>:w<CR>", { noremap = true, silent = true })
 map("n", "<leader>wa", ":wa<CR>", { desc = "Write All", noremap = true, silent = true })
+map("n", "q", "<Nop>") -- 禁用 q 键宏录制
