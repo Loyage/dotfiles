@@ -1,11 +1,9 @@
 return {
-  ---@type LazySpec
   {
     "mikavilpas/yazi.nvim",
     event = "VeryLazy",
     -- dependencies = { "folke/snacks.nvim", lazy = true },
     keys = {
-      -- 👇 in this section, choose your own keymappings!
       {
         "<leader>e",
         mode = { "n", "v" },
@@ -24,7 +22,6 @@ return {
         desc = "Resume the last yazi session",
       },
     },
-    ---@type YaziConfig | {}
     opts = {
       -- if you want to open yazi instead of netrw, see below for more info
       open_for_directories = false,
