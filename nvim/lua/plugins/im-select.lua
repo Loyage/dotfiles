@@ -3,6 +3,7 @@ return {
   {
     "keaising/im-select.nvim",
     lazy = false,
+    cond = vim.loop.os_uname().sysname == "Darwin",
     opts = {
       default_im_select = "com.apple.keylayout.ABC",
       default_command = "im-select",
