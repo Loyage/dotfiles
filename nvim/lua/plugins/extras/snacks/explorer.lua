@@ -6,6 +6,17 @@ return {
     "folke/snacks.nvim",
     ---@type snacks.Config
     keys = {
+      -- 开关隐藏文件
+      -- ["<a-h>"] = { "toggle_hidden", mode = { "i", "n" } },
+
+      -- 覆写 Smart Find 的快捷键，允许隐藏文件
+      {
+        "<leader><space>",
+        function()
+          Snacks.picker.smart({ hidden = true })
+        end,
+        desc = "Smart Find (allow hidden)",
+      },
       {
         "<leader>/",
         function()
@@ -36,7 +47,7 @@ return {
         end,
         desc = "Buffers",
       },
-      --- Config File: 其实就是 nvim 文件夹
+      --- Config File: 其实就是 nvim 文件夹，单独设置一个快捷键可能是方便随时修改设置
       {
         "<leader>fc",
         function()
@@ -44,7 +55,7 @@ return {
         end,
         desc = "Find Config File",
       },
-      --- 感觉不如前面 smart find 一根
+      --- 感觉不如 smart find 一根
       {
         "<leader>ff",
         function()
