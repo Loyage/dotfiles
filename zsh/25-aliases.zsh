@@ -117,7 +117,9 @@ alias pf='fastfetch'
 alias ff='fastfetch'
 
 # github copilot cli
-eval "$(gh copilot alias -- bash)"
+if command -v gh &>/dev/null; then
+  eval "$(gh copilot alias -- bash)"
+fi
 
 # -----------------------------------------------------
 # For Arch Linux
