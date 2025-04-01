@@ -92,6 +92,11 @@ return {
 -- 请在当前目录自行创建 land-select.lua 文件，并选配所需语言
 -- 示例：
 -- return {
---    { import = "plugins.extras.lang.python" },
---    { import = "plugins.extras.lang.markdown" },
+--   { import = "plugins.extras.lang.python" },
+--   { import = "plugins.extras.lang.markdown" },
+--   { import = "plugins.extras.lang.typescipt" },
+-- }
+-- 或者直接导入所有语言的配置：
+-- return {
+--   { import = "plugins.extras.lang" },
 -- }
