@@ -18,6 +18,11 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    -- 这里解释一下：
+    -- 虽然后面那句也会自动导入这个文件，但是这里要保证该文件最先被导入，
+    -- 因为 lang settings 涉及对 LazyExtra 的导入，可能会触发 lazyvim 关于导入顺序的 WARNING
+    -- 所以要么保证优先导入，要么禁用该 WARNING。
+    { import = "plugins.lang-select" },
     -- import/override with your plugins
     { import = "plugins" },
   },
