@@ -5,7 +5,9 @@
 -- default plugins:
 -- nvim-lspconfig, mason.nvim, mini.icons, (nvim-dap)
 return {
-  { import = "plugins.extras.lang.typescript" },
+  --------- import default settings firstly -------
+  { import = "lazyvim.plugins.extras.lang.typescript" },
+  --------- then take settings yourself -----------
   -- LSP config
   {
     "neovim/nvim-lspconfig",

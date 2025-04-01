@@ -5,7 +5,9 @@
 -- default plugins:
 -- nvim-lspconfig, mason.nvim, markdown-preview.nvim, render-markdown.nvim
 return {
-  { import = "plugins.extras.lang.markdown" },
+  --------- import default settings firstly -------
+  { import = "lazyvim.plugins.extras.lang.markdown" },
+  --------- then take settings yourself -----------
   {
     "williamboman/mason.nvim",
     -- -- 不要默认安装 markdownlint-cli2 和 markdown-toc

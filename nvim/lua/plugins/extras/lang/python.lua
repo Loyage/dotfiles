@@ -5,5 +5,7 @@
 -- default plugins:
 -- ..., neotest, nvim-dap-python
 return {
-  { import = "plugins.extras.lang.python" },
+  --------- import default settings firstly -------
+  { import = "lazyvim.plugins.extras.lang.python" },
+  --------- then take settings yourself -----------
 }
