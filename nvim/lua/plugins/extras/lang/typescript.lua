@@ -5,6 +5,7 @@
 -- default plugins:
 -- nvim-lspconfig, mason.nvim, mini.icons, (nvim-dap)
 return {
+  { import = "plugins.extras.lang.typescript" },
   -- LSP config
   {
     "neovim/nvim-lspconfig",

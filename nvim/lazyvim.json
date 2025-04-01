@@ -2,12 +2,8 @@
   "extras": [
     "lazyvim.plugins.extras.ai.copilot",
     "lazyvim.plugins.extras.ai.copilot-chat",
-    "lazyvim.plugins.extras.coding.yanky",
-    "lazyvim.plugins.extras.lang.markdown",
-    "lazyvim.plugins.extras.lang.python",
-    "lazyvim.plugins.extras.lang.typescript"
+    "lazyvim.plugins.extras.coding.yanky"
   ],
-  "install_version": 8,
   "news": {
     "NEWS.md": "10960"
   },
