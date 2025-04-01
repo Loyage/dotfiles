@@ -18,6 +18,10 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    -- 这里解释一下，虽然后面也会导入 lang-select.lua，
+    -- 但是由于 lang-select 涉及对 LazyExtra 的导入，可能触发 lazyvim 关于导入顺序的 WARNINING
+    -- 所以这里提前导入 lang-select.lua，或者禁用该 WARNING `vim.g.lazyvim_check_order = false`
+    { import = "plugins.lang-select" },
     -- import/override with your plugins
     { import = "plugins" },
   },
