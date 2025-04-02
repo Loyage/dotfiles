@@ -3,4 +3,3 @@
 -- Add any additional options here
 
 vim.g.transparent_background = true
-vim.g.clipboard = "osc52"
