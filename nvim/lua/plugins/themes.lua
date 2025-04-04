@@ -1,23 +1,31 @@
+-- <leader>uC 浏览和热加载主题
 return {
-  -- options (catppuccin-?): latte, frappe, macchiato, mocha
   -- https://github.com/catppuccin/nvim
   {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
     opts = {
+      flavour = "frappe",
       transparent_background = true,
+      dim_inactive = {
+        enabled = true, -- dims the background color of inactive window
+        shade = "dark",
+        percentage = 0.05, -- percentage of the shade to apply to the inactive window
+      },
     },
   },
+  -- https://github.com/folke/tokyonight.nvim
   {
     "folke/tokyonight.nvim",
     lazy = true,
     opts = { style = "moon" },
   },
+
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-frappe",
+      colorscheme = "catppuccin",
     },
   },
 }
