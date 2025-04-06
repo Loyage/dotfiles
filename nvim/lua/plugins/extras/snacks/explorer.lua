@@ -8,6 +8,14 @@ return {
     keys = {
       -- 开关隐藏文件
       -- ["<a-h>"] = { "toggle_hidden", mode = { "i", "n" } },
+      {
+        "<leader>e",
+        false,
+      },
+      {
+        "<leader>E",
+        false,
+      },
 
       -- 覆写 Smart Find 的快捷键，允许隐藏文件
       {
