@@ -4,7 +4,7 @@ return {
     -- 只在用户闲得慌的时候才加载该插件（不影响打开速度）
     -- 但偶尔会出现手速太快快捷键不加载的问题
     event = "VeryLazy",
-    -- dependencies = { "folke/snacks.nvim", lazy = true },
+    dependencies = { "folke/snacks.nvim", lazy = true },
     keys = {
       {
         "<leader>e",
