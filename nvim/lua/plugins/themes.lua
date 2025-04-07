@@ -15,6 +15,17 @@ return {
       },
     },
   },
+  {
+    "akinsho/bufferline.nvim",
+    opts = {
+      options = {
+        separator_style = "slant",
+        indicator = {
+          style = "underline",
+        },
+      },
+    },
+  },
   -- https://github.com/folke/tokyonight.nvim
   {
     "folke/tokyonight.nvim",
