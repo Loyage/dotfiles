@@ -1,10 +1,20 @@
 return {
   {
     "mikavilpas/yazi.nvim",
-    -- 只在用户闲得慌的时候才加载该插件（不影响打开速度）
-    -- 但偶尔会出现手速太快快捷键不加载的问题
-    event = "VeryLazy",
-    -- dependencies = { "folke/snacks.nvim", lazy = true },
+    -- 禁用 neotree 对应快捷键，避免被占用
+    dependencies = {
+      "nvim-neo-tree/neo-tree.nvim",
+      keys = {
+        {
+          "<leader>e",
+          false,
+        },
+        {
+          "<leader>E",
+          false,
+        },
+      },
+    },
     keys = {
       {
         "<leader>e",
