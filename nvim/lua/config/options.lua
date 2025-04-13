@@ -3,3 +3,6 @@
 -- Add any additional options here
 
 vim.g.transparent_background = true
+if vim.g.neovide then
+  require("config.neovide").init()
+end
