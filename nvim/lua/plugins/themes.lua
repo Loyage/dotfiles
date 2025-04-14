@@ -1,5 +1,15 @@
 -- <leader>uC 浏览和热加载主题
 return {
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = {
+      options = {
+        theme = "dracula",
+        globalstatus = true,
+        section_separators = { left = "", right = "" },
+      },
+    },
+  },
   -- https://github.com/catppuccin/nvim
   {
     "catppuccin/nvim",
