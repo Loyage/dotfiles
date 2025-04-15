@@ -4,7 +4,7 @@ return {
     "nvim-lualine/lualine.nvim",
     opts = {
       options = {
-        theme = "OceanicNext",
+        theme = "auto",
         globalstatus = true,
         section_separators = { left = "", right = "" },
       },

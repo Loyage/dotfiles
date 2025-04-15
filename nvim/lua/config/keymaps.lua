@@ -17,3 +17,14 @@ map("i", "jj", "<Esc>", { noremap = true, silent = true })
 map("i", "jk", "<Esc>:w<CR>", { noremap = true, silent = true })
 map("n", "<leader>wa", ":wa<CR>", { desc = "Write All", noremap = true, silent = true })
 map("n", "q", "<Nop>") -- 禁用 q 键宏录制
+
+-- Ctrl + A 全选
+map("n", "<C-a>", "ggVG", { noremap = true, silent = true })
+map("v", "<C-a>", "ggVG", { noremap = true, silent = true })
+map("i", "<C-a>", "<Esc>ggVG", { noremap = true, silent = true })
+
+-- Ctrl + C 复制
+map("v", "<C-c>", '"+y', { noremap = true, silent = true })
+
+-- Ctrl + V 粘贴
+map("i", "<C-v>", '<C-r>"', { noremap = true, silent = true })
