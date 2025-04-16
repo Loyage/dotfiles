@@ -17,6 +17,7 @@ map("i", "jj", "<Esc>", { noremap = true, silent = true })
 map("i", "jk", "<Esc>:w<CR>", { noremap = true, silent = true })
 map("n", "<leader>wa", ":wa<CR>", { desc = "Write All", noremap = true, silent = true })
 map("n", "q", "<Nop>") -- 禁用 q 键宏录制
+map("v", "q", "<ESC>")
 
 -- Ctrl + A 全选
 map("n", "<C-a>", "ggVG", { noremap = true, silent = true })
