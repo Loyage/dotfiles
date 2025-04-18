@@ -97,7 +97,10 @@ plugins=(
   web-search
   # <Alt> + ↑↓←→
   dirhistory
+  # if alias exists, suggest it: https://github.com/MichaelAquilina/zsh-you-should-use
+  you-should-use
 )
+export YSU_MESSAGE_POSITION="after"
 # Don't load Oh My Zsh on Linux TTYs
 [[ -z "$OMZ_LOAD" && $TTY = /dev/tty* && $OSTYPE = linux* ]] || source "$ZSH/oh-my-zsh.sh"
 
