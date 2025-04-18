@@ -83,6 +83,7 @@ plugins=(
   brew
   tmux
   archlinux
+  eza
   # <Esc> twice to add 'sudo' before the last command
   sudo
   # load autojump, which can 'j' to frequently used folders
@@ -100,6 +101,10 @@ plugins=(
   you-should-use
 )
 export YSU_MESSAGE_POSITION="after"
+zstyle ':omz:plugins:eza' 'icons' yes
+zstyle ':omz:plugins:eza' 'header' yes
+zstyle ':omz:plugins:eza' 'git-status' yes
+zstyle ':omz:plugins:eza' 'dirs-first' yes
 # Don't load Oh My Zsh on Linux TTYs
 [[ -z "$OMZ_LOAD" && $TTY = /dev/tty* && $OSTYPE = linux* ]] || source "$ZSH/oh-my-zsh.sh"
 

@@ -5,13 +5,10 @@
 # -----------------------------------------------------
 # Better commands
 # -----------------------------------------------------
-# eza -> ls
+# eza -> ls (some are defined by omz plugin)
 if command -v eza &>/dev/null; then
-  alias ls='eza --icons'
-  alias la='eza -A --icons'
   alias lt='eza -T --icons'
   alias lta='eza -T -A --icons'
-  alias ll='eza -l --git --icons --header'
   alias lla='eza -l --git -A --icons --header'
 fi
 
