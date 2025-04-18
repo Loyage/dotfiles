@@ -106,11 +106,6 @@ gensshkey() {
     ssh-keygen -f "$HOME/.ssh/$1" -t rsa -N '' -C "$user_host to $1"
 }
 
-# tmux
-alias ta='tmux attach-session -t'
-alias tn='tmux new -s'
-alias tk='tmux kill-session -t'
-
 # fastfetch
 alias nf='fastfetch'
 alias pf='fastfetch'

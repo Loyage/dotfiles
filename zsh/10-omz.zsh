@@ -78,12 +78,11 @@ zstyle ':omz:update' frequency
 # 插件列表和具体说明可见：
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
 plugins=(
-  # alias: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+  # alias: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
   git
-  # alias: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
-  archlinux
-  # alias: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/brew
   brew
+  tmux
+  archlinux
   # <Esc> twice to add 'sudo' before the last command
   sudo
   # load autojump, which can 'j' to frequently used folders
