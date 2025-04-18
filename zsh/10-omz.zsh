@@ -82,8 +82,10 @@ plugins=(
   git
   brew
   tmux
-  archlinux
   eza
+  conda
+  archlinux
+  alias-finder
   # <Esc> twice to add 'sudo' before the last command
   sudo
   # load autojump, which can 'j' to frequently used folders
@@ -97,14 +99,21 @@ plugins=(
   web-search
   # <Alt> + ↑↓←→
   dirhistory
-  # if alias exists, suggest it: https://github.com/MichaelAquilina/zsh-you-should-use
-  you-should-use
+  # # if alias exists, suggest it: https://github.com/MichaelAquilina/zsh-you-should-use
+  # you-should-use
 )
 export YSU_MESSAGE_POSITION="after"
+
 zstyle ':omz:plugins:eza' 'icons' yes
 zstyle ':omz:plugins:eza' 'header' yes
 zstyle ':omz:plugins:eza' 'git-status' yes
 zstyle ':omz:plugins:eza' 'dirs-first' yes
+
+zstyle ':omz:plugins:alias-finder' autoload yes
+zstyle ':omz:plugins:alias-finder' longer yes
+zstyle ':omz:plugins:alias-finder' exact yes
+zstyle ':omz:plugins:alias-finder' cheaper yes
+
 # Don't load Oh My Zsh on Linux TTYs
 [[ -z "$OMZ_LOAD" && $TTY = /dev/tty* && $OSTYPE = linux* ]] || source "$ZSH/oh-my-zsh.sh"
 
