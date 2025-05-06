@@ -29,3 +29,6 @@ map("v", "<C-c>", '"+y', { noremap = true, silent = true })
 
 -- Ctrl + V 粘贴
 map("i", "<C-v>", '<C-r>"', { noremap = true, silent = true })
+
+-- Oil
+map("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
