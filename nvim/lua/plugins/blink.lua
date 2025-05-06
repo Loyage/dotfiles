@@ -1,3 +1,4 @@
+-- 补全插件
 return {
   {
     "saghen/blink.cmp",

@@ -1,3 +1,4 @@
+-- 控制各种信息显示的插件
 return {
   "folke/noice.nvim",
   event = "VeryLazy",

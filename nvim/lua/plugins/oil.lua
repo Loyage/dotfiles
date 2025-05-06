@@ -1,3 +1,4 @@
+-- 文件浏览器，完全 vim 逻辑
 return {
   "stevearc/oil.nvim",
   ---@module 'oil'

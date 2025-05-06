@@ -1,3 +1,4 @@
+-- Yazi: 一个文件浏览软件
 return {
   {
     "mikavilpas/yazi.nvim",
