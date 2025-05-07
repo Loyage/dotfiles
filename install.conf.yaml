@@ -13,6 +13,7 @@
     ~/.config/kitty/: ./kitty
     ~/.config/nvim/: ./nvim
     ~/.config/ohmyposh: ./ohmyposh
+    ~/.config/lazygit: ./lazygit
     # in linux
     ~/.config/fontconfig/: ./fontconfig
     ~/.config/hypr/conf/custom.conf: ./hypr/conf/custom.conf
