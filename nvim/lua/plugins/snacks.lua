@@ -12,7 +12,20 @@ return {
       explorer = { enabled = true },
       picker = { enabled = true },
       bigfile = { enabled = true },
-      indent = { enabled = true },
+      indent = {
+        enabled = true,
+        scope = {
+          enabled = true,
+          underline = true,
+        },
+        chunk = {
+          enabled = true,
+          char = {
+            corner_top = "╭",
+            corner_bottom = "╰",
+          },
+        },
+      },
       input = { enabled = true },
       quickfile = { enabled = true },
       scope = { enabled = true },
