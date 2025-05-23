@@ -4,8 +4,8 @@ gui:
 keybinding:
   universal:
     return: '<esc>'
-    prevBlock-alt: 'n'
-    nextBlock-alt: 'i'
+    # prevBlock-alt: 'n'
+    # nextBlock-alt: 'i'
     nextMatch: '='
     prevMatch: '-'
     new: 'k'
