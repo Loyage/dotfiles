@@ -10,7 +10,12 @@ return {
     ---@type snacks.Config
     opts = {
       explorer = { enabled = true },
-      picker = { enabled = true },
+      picker = {
+        enabled = true,
+        layout = {
+          preset = "default",
+        },
+      },
       bigfile = { enabled = true },
       indent = {
         enabled = true,
