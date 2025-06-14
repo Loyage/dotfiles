@@ -62,19 +62,30 @@ return {
           end
           vim.print = _G.dd -- Override print to use snacks for `:=` command
 
-          -- Create some toggle mappings
+          -- 一些开关快捷键
+          -- us: 拼写检查
           Snacks.toggle.option("spell", { name = "Spelling" }):map("<leader>us")
+          -- uw: 过长自动换行
           Snacks.toggle.option("wrap", { name = "Wrap" }):map("<leader>uw")
+          -- uL: 相对行号
           Snacks.toggle.option("relativenumber", { name = "Relative Number" }):map("<leader>uL")
+          -- ud: 诊断信息
           Snacks.toggle.diagnostics():map("<leader>ud")
+          -- ul: 行号
           Snacks.toggle.line_number():map("<leader>ul")
+          -- uc: ?
           Snacks.toggle
             .option("conceallevel", { off = 0, on = vim.o.conceallevel > 0 and vim.o.conceallevel or 2 })
             :map("<leader>uc")
+          -- uT: treesitter 高亮
           Snacks.toggle.treesitter():map("<leader>uT")
+          -- ub: 黑暗背景
           Snacks.toggle.option("background", { off = "light", on = "dark", name = "Dark Background" }):map("<leader>ub")
+          -- uh: 行内类型注释
           Snacks.toggle.inlay_hints():map("<leader>uh")
+          -- ug: 缩进提示
           Snacks.toggle.indent():map("<leader>ug")
+          -- uD: 专注模式（只高亮当前所在块）
           Snacks.toggle.dim():map("<leader>uD")
         end,
       })
