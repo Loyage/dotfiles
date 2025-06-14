@@ -1,4 +1,5 @@
 return {
+  -- 颜色原位显示
   {
     "NvChad/nvim-colorizer.lua",
     config = function()
@@ -12,6 +13,24 @@ return {
           hsl_fn = true, -- Enable hsl() and hsla() functions
           css = true, -- Enable CSS color codes
           css_fn = true, -- Enable CSS functions
+        },
+      })
+    end,
+  },
+
+  -- 🌈括号
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+    config = function()
+      require("rainbow-delimiters.setup").setup({
+        highlight = {
+          "RainbowDelimiterBlue",
+          "RainbowDelimiterViolet",
+          "RainbowDelimiterRed",
+          "RainbowDelimiterYellow",
+          "RainbowDelimiterGreen",
+          "RainbowDelimiterOrange",
+          "RainbowDelimiterCyan",
         },
       })
     end,
