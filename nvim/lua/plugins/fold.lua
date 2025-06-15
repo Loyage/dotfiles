@@ -8,10 +8,10 @@ return {
   "kevinhwang91/nvim-ufo",
   dependencies = "kevinhwang91/promise-async",
   config = function()
-    -- 使得折叠部分后边显示折叠行数
+    -- 控制折叠块后边显示什么
     local handler = function(virtText, lnum, endLnum, width, truncate)
       local newVirtText = {}
-      local suffix = (" 󰁂 %d "):format(endLnum - lnum)
+      local suffix = (" 󰁂 %d lines"):format(endLnum - lnum)
       local sufWidth = vim.fn.strdisplaywidth(suffix)
       local targetWidth = width - sufWidth
       local curWidth = 0
@@ -33,7 +33,9 @@ return {
         end
         curWidth = curWidth + chunkWidth
       end
-      table.insert(newVirtText, { suffix, "MoreMsg" })
+      table.insert(newVirtText, { "  ◖", "@comment.warning.gitcommit" })
+      table.insert(newVirtText, { suffix, "@comment.warning" })
+      table.insert(newVirtText, { "◗  ", "@comment.warning.gitcommit" })
       return newVirtText
     end
     -- -- Option 2: nvim lsp as LSP client
