@@ -77,6 +77,10 @@ alias gconf='git config user.name "loyage";git config user.email "792058350@qq.c
 alias ggconf='git config --global user.name "loyage";git config --global user.email "792058350@qq.com"'
 alias gs='git status'
 
+# zellij
+alias zli='zellij'
+alias za='zellij a'
+
 # lazygit
 alias lg='lazygit'
 
