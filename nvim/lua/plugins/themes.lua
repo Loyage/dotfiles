@@ -30,6 +30,7 @@ return {
     opts = {
       options = {
         separator_style = "slope",
+        diagnostics = false,
         indicator = {
           style = "underline",
         },
