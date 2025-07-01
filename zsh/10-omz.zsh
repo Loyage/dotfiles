@@ -81,7 +81,6 @@ plugins=(
   # alias: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
   git
   brew
-  tmux
   eza
   conda
   archlinux
