@@ -81,8 +81,9 @@ alias gs='git status'
 alias zli='zellij'
 alias za='zellij a'
 
-# lazygit
+# lazygit, lazyjj
 alias lg='lazygit'
+alias lj='lazyjj'
 
 # conda
 alias act="conda activate"
