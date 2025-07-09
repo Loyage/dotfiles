@@ -1,13 +1,14 @@
 # -----------------------------------------------------
-# INIT
+# PATHs
 # -----------------------------------------------------
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.npm-global/bin:$PATH" # For npm in nix
+export PATH="/usr/lib/ccache/bin:$PATH"
 
 # -----------------------------------------------------
 # Exports
 # -----------------------------------------------------
 export EDITOR=nvim
-export PATH="/usr/lib/ccache/bin/:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
 export XDG_CONFIG_HOME="$HOME/.config"
 
