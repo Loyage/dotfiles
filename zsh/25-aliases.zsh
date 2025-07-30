@@ -22,6 +22,12 @@ if command -v zoxide &>/dev/null; then
   eval "$(zoxide init zsh --cmd cd)"
 fi
 
+# gomi -> rm
+if command -v gomi &>/dev/null; then
+  alias rm='gomi'
+  alias rb='gomi -b'
+fi
+
 # vim -> nvim
 alias vim='nvim'
 alias v='nvim'
