@@ -31,7 +31,10 @@ main() {
   local packages_to_install=()
 
   # 1. Detect the package manager
-  if command -v apt-get &>/dev/null; then
+  if command -v brew &>/dev/null; then
+    manager="brew"
+    install_cmd="brew install"
+  elif command -v apt-get &>/dev/null; then
     manager="apt"
     install_cmd="sudo apt-get install -y"
     msg "Updating package lists with apt..."
@@ -39,9 +42,6 @@ main() {
   elif command -v pacman &>/dev/null; then
     manager="pacman"
     install_cmd="sudo pacman -S --noconfirm"
-  elif command -v brew &>/dev/null; then
-    manager="brew"
-    install_cmd="brew install"
   else
     error "No supported package manager found (apt, pacman, brew, dnf, zypper)."
   fi
