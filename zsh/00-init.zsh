@@ -20,3 +20,11 @@ if command -v carapace &>/dev/null; then
   zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
   source <(carapace _carapace)
 fi
+
+# -----------------------------------------------------
+# LS_COLORS
+# -----------------------------------------------------
+if command -v vivid &>/dev/null; then
+  export LS_COLORS=$(vivid generate dracula)
+fi
+

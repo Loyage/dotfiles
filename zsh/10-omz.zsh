@@ -78,22 +78,24 @@ zstyle ':omz:update' frequency
 # 插件列表和具体说明可见：
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
 plugins=(
-  # alias: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
+  ## aliases: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
   git
   brew
   eza
   conda
   archlinux
-  # alias-finder
+
+  # auto suggestions
+  zsh-autosuggestions
+  # highlights
+  zsh-syntax-highlighting
+  fast-syntax-highlighting
   # <Esc> twice to add 'sudo' before the last command
   sudo
   # load autojump, which can 'j' to frequently used folders
   autojump
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  fast-syntax-highlighting
   # zsh's vim mode
-  zsh-vi-mode
+  # zsh-vi-mode
   # web_search google xxx
   web-search
   # <Alt> + ↑↓←→
@@ -125,6 +127,7 @@ export VI_MODE_SET_CURSOR=true
 # Set-up zsh-autosuggestions
 # -----------------------------------------------------
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+bindkey '^L' autosuggest-accept
 # zsh history
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
