@@ -6,3 +6,7 @@ vim.g.transparent_background = true
 if vim.g.neovide then
   require("config.neovide").init()
 end
+
+if vim.g.vscode then
+  require("config.vscode").init()
+end
