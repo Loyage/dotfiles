@@ -45,7 +45,7 @@ return {
       styles = {
         notification = {
           -- 允许换行
-          wo = { wrap = true }, -- Wrap notifications
+          -- wo = { wrap = true }, -- Wrap notifications
         },
       },
     },
