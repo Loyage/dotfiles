@@ -2,6 +2,8 @@
 # ALIASES
 # -----------------------------------------------------
 
+alias ntop='nvitop'
+
 # -----------------------------------------------------
 # Better commands
 # -----------------------------------------------------
@@ -59,6 +61,7 @@ function yi() {
 
 # better tldr (tealdeer as implementation)
 alias tldr='tldr --color always'
+alias tl='tldr'
 
 # 利用 bat 加强 fzf
 export FZF_DEFAULT_OPTS="--height 60% --preview 'bat --color=always --style=numbers --line-range=:500 {}'"

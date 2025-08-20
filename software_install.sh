@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 PACKAGES=(
+  "tealdeer"   # tldr client
   "eza"        # better ls
   "bat"        # better cat
   "zoxide"     # better cd
@@ -12,6 +13,10 @@ PACKAGES=(
   "vivid"      # color management
   "lazygit"    # git UI
   "oh-my-posh" # shell prompt
+)
+
+OTHER_PACKAGES=(
+  "nvitop" # nvidia GPU monitor (conda)
 )
 
 # --- Helper Functions ---
