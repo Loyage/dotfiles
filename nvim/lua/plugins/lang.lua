@@ -34,18 +34,6 @@ return {
       inlay_hints = {
         enabled = false,
       },
-      diagnostics = {
-        float = {
-          source = true,
-        },
-        virtual_text = {
-          prefix = "icons",
-          spacing = 4,
-          source = true,
-          -- source = "if_many",
-        },
-        -- virtual_text = false,
-      },
       servers = {
         yamlls = {},
         lua_ls = {
