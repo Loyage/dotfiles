@@ -8,4 +8,15 @@ return {
   --------- import default settings firstly -------
   { import = "lazyvim.plugins.extras.lang.python" },
   --------- then take settings yourself -----------
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        pyright = {
+          mason = false,
+          autostart = false,
+        },
+      },
+    },
+  },
 }
