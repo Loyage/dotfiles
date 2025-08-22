@@ -15,6 +15,7 @@
     ~/.config/ohmyposh: ./ohmyposh
     ~/.config/lazygit: ./lazygit
     ~/.config/zellij: ./zellij
+    ~/.config/btop: ./btop
     # in linux
     ~/.config/fontconfig/: ./fontconfig
     ~/.config/hypr/conf/custom.conf: ./hypr/conf/custom.conf
