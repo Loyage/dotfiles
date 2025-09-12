@@ -11,7 +11,10 @@ PACKAGES=(
   "zellij"     # zellij terminal multiplexer
   "carapace"   # shell completion framework
   "vivid"      # color management
-  "lazygit"    # git UI
+  "lazygit"    # TUI git
+  "lazyjj"     # TUI jj
+  "lazydocker" # TUI docker
+  "lazynpm"    # TUI npm
   "oh-my-posh" # shell prompt
 )
 
