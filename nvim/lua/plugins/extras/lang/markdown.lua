@@ -9,7 +9,7 @@ return {
   { import = "lazyvim.plugins.extras.lang.markdown" },
   --------- then take settings yourself -----------
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     -- -- 不要默认安装 markdownlint-cli2 和 markdown-toc
     -- -- 此外还要设置 conform.nvim 不要默认调用这俩，否则会持续报错
     -- opts = function(_, opts)

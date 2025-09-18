@@ -30,7 +30,7 @@ return {
   },
   -- Mason: 确保 js-debug-adapter 已安装
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = function(_, opts)
       opts.ensure_installed = opts.ensure_installed or {}
       table.insert(opts.ensure_installed, "js-debug-adapter")
@@ -39,6 +39,6 @@ return {
   -- typescript 文件相关 icons，
   -- 默认 icons 已由 LazyExtra 插件定义，这里不用重复定义，仅作占位提示
   {
-    "echasnovski/mini.icons",
+    "nvim-mini/mini.icons",
   },
 }

@@ -10,7 +10,7 @@ return {
   --------- then take settings yourself -----------
   -- nix 的几个 formatter 均只支持 Linux 平台
   -- {
-  --   "williamboman/mason.nvim",
+  --   "mason-org/mason.nvim",
   --   opts = function(_, opts)
   --     opts.ensure_installed = opts.ensure_installed or {}
   --     table.insert(opts.ensure_installed, "")
