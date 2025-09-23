@@ -16,6 +16,7 @@ PACKAGES=(
   "lazydocker" # TUI docker
   "lazynpm"    # TUI npm
   "oh-my-posh" # shell prompt
+  "ouch"       # combined compress tool
 )
 
 OTHER_PACKAGES=(
