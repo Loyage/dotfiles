@@ -25,7 +25,7 @@ if [ "$(uname -s)" = "Linux" ]; then
       fi
   fi
 elif [ "$(uname -s)" = "Darwin" ]; then
-  fastfetch --config examples/6
+  fastfetch --config examples/13
 else
   echo "这什么鬼系统？"
 fi
