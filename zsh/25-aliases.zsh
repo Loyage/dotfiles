@@ -93,6 +93,7 @@ alias za='zellij a'
 # lazygit, lazyjj
 alias lg='lazygit'
 alias lj='lazyjj'
+alias lsh='lazyssh'
 
 # conda
 alias act="conda activate"
