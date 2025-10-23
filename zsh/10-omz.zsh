@@ -27,7 +27,7 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/EDM115-newline.omp.j
 
 # Auto update settings
 zstyle ':omz:update' mode reminder
-zstyle ':omz:update' frequency
+zstyle ':omz:update' frequency 60
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
