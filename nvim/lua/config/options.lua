@@ -15,7 +15,7 @@ end
 -- In wsl, using clip.exe
 vim.opt.clipboard:append("unnamedplus")
 
-if vim.fn.exists("$SSH_TTY") == 1 and vim.env.TMUX == nil then
+if vim.fn.exists("$SSH_TTY") == 1 and vim.env.TMUX == nil and vim.env.ZELLIJ == nil then
   vim.g.clipboard = {
     name = "OSC 52",
     copy = {
