@@ -5,3 +5,5 @@
 	name = Loyage
 [pull]
 	rebase = true
+[fetch]
+	prune = true
