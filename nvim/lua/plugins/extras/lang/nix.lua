@@ -8,7 +8,6 @@ return {
   --------- import default settings firstly -------
   { import = "lazyvim.plugins.extras.lang.nix" },
   --------- then take settings yourself -----------
-  -- nix 的几个 formatter 均只支持 Linux 平台
   -- {
   --   "mason-org/mason.nvim",
   --   opts = function(_, opts)
@@ -16,12 +15,28 @@ return {
   --     table.insert(opts.ensure_installed, "")
   --   end,
   -- }
+  -- {
+  --   "stevearc/conform.nvim",
+  --   optional = true,
+  --   opts = {
+  --     formatters_by_ft = {
+  --       nix = { "nixpkgs-fmt" },
+  --     },
+  --   },
+  -- },
   {
-    "stevearc/conform.nvim",
-    optional = true,
+    "neovim/nvim-lspconfig",
     opts = {
-      formatters_by_ft = {
-        nix = { "alejandra" },
+      servers = {
+        nil_ls = {
+          settings = {
+            ["nil"] = {
+              formatting = {
+                command = { "nixpkgs-fmt" },
+              },
+            },
+          },
+        },
       },
     },
   },
