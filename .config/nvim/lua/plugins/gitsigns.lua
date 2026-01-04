@@ -3,6 +3,7 @@ return {
     "lewis6991/gitsigns.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
+      -- gitsigns yadm 插件
       {
         "purarue/gitsigns-yadm.nvim",
         ---@module 'gitsigns-yadm'

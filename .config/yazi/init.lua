@@ -1,1 +1,5 @@
-/nix/store/fm247w42d848818kp5m0m2lhj5gq1brk-home-manager-files/.config/yazi/init.lua
+require("git"):setup()
+require("full-border"):setup({
+	-- Available values: ui.Border.PLAIN, ui.Border.ROUNDED
+	type = ui.Border.ROUNDED,
+})

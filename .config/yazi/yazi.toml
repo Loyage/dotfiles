@@ -1,1 +1,16 @@
-/nix/store/fm247w42d848818kp5m0m2lhj5gq1brk-home-manager-files/.config/yazi/yazi.toml
+# yazi.toml
+[mgr]
+line_mode    = "size"
+ratio       = [ 1, 3, 3 ]
+show_hidden = true
+sort_by     = "natural"
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*"
+run  = "git"
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*/"
+run  = "git"
