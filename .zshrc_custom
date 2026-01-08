@@ -1,0 +1,6 @@
+# 这里会按文件名最前面数字的顺序对配置进行导入
+for f in ~/.config/zsh/*; do
+    if [ ! -d $f ]; then
+        source $f
+    fi
+done
