@@ -32,7 +32,7 @@ return {
             -- https://github.com/TheZoraiz/ascii-image-converter
             -- cmd = "ascii-image-converter 'https://avatars.githubusercontent.com/u/55688916?v=4' -C -c",
             -- https://github.com/hpjansson/chafa
-            cmd = "chafa ~/.dotfiles/github-avater.png --format symbols --symbols vhalf --size 40x40 ; sleep .1",
+            cmd = "chafa ~/.config/avater.png --format symbols --symbols vhalf --size 40x40 ; sleep .1",
             indent = 12,
             height = 20,
           },
